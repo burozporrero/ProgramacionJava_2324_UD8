@@ -1,11 +1,28 @@
 # ESTRUCTURAS DE DATOS
 
+<!-- TOC -->
+* [ESTRUCTURAS DE DATOS](#estructuras-de-datos)
+  * [¿Qué son las estructuras de datos?](#qué-son-las-estructuras-de-datos)
+  * [Estructuras de datos dinámicas](#estructuras-de-datos-dinámicas)
+  * [Estructuras de datos: dinámicas y lineales](#estructuras-de-datos-dinámicas-y-lineales)
+    * [LISTA](#lista)
+      * [__Lista lineal__](#__lista-lineal__-)
+      * [__Lista enlazada__](#__lista-enlazada__-)
+    * [PILA](#pila)
+    * [COLA](#cola)
+  * [Estructuras de datos: dinámicas y no lineales](#estructuras-de-datos-dinámicas-y-no-lineales)
+    * [ÁRBOL](#árbol)
+    * [GRAFO](#grafo)
+  * [TABLA HASH](#tabla-hash)
+  * [Bibliografía](#bibliografía)
+<!-- TOC -->
+
 Para ver esta información de forma más amena podéis acceder a [AULA EN LA NUBE](https://www.youtube.com/watch?v=4Wqiackpdgk&list=PLG1qdjD__qH6ULjW5iN8E45m5nkaCNbUu&index=143)
 
 ##  ¿Qué son las estructuras de datos?
 
 Las estructuras de datos en programación son un modo de representar información en una computadora. Conocerlas 
-en profundidad permite organizar mejor la información y diseñar la solución al un problema con la opción de código más 
+en profundidad permite organizar mejor la información y diseñar la solución a un problema con la opción de código más 
 eficiente.
 
 En las unidades didácticas iniciales introdujimos el concepto de datos de tipo simple que representan valores de 
@@ -30,13 +47,14 @@ enlazadas, pilas, colas, árboles y grafos.
 
 ## Estructuras de datos dinámicas
 
-Una estructura de datos dinámica es una colección de elementos denominados nodos de la estructura que son enlazados juntos.
+Una estructura de datos dinámica es una colección de elementos, denominados nodos de la estructura, que son enlazados 
+juntos.
 Mediante un tipo de dato específico, denominado puntero, es posible ir enlazando los nodos de la estructura de datos, 
 
 Las estructuras de datos dinámicas son soportadas por la mayoría de los lenguajes de programación, ya que ofrecen 
 soluciones eficaces y efectivas en la solución de problemas complejos. 
 
-Se clasifican en lineales y no lineales. 
+Se clasifican en **lineales** y **no lineales**. 
 
 ## Estructuras de datos: dinámicas y lineales
 
@@ -191,6 +209,12 @@ Idealmente, la función hash asignará cada clave a una ranura única. Sin embar
 posible que dos claves diferentes puedan producir el mismo índice. Esto se conoce como una colisión. Hay varias 
 técnicas para manejar las colisiones, en las cuales no entraremos en detalle.
 
-**Nota**:
-Información e imágenes extraídos del libro Fundamentos de la Programación de Luis Joyanes Aguilar y Matilde 
+## Bibliografía
+
+Información e imágenes extraidos del libro Fundamentos de la Programación de Luis Joyanes Aguilar y Matilde 
 Fernández Azuela.
+
+Otra bibliografía de interés:
+- Estructuras de datos en Java de Luis Joyanes Aguilar e Ignacio Zahonero Martínez.
+- Grokking Algorithm de Aditya Y. Bhargava.
+- Data structures and algorithms made easy de Narasimha Karumanchi.
