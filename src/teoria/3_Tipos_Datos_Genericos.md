@@ -194,24 +194,35 @@ public class Pareja<T, V> {
     public V getSegundo() {
         return segundo;
     }
+
+    // Ejemplo de método que recibe dos tipos de datos genéricos
+    public static  <T, V> void printTwoTypes(T t, V v) {
+      System.out.println("T: " + t + ", U: " + v);
+    }
+
+    @Override
+    public String toString() {
+      return "Pareja{" +
+              "primero=" + primero +
+              ", segundo=" + segundo +
+              '}';
+    }
 }
 ```
 
-Ejemplo de múltiples parámetros en un método:
+Ejemplo de uso de la clase y su método estático:
 
 ```java
-public class Main {
-    public static void main(String[] args) {
-        Main main = new Main();
-        main.<String, Integer>printTwoTypes("Hello", 123);
-        main.<Double, Boolean>printTwoTypes(45.6, true);
-    }
-
-    public <T, U> void printTwoTypes(T t, U u) {
-        System.out.println("T: " + t + ", U: " + u);
-    }
+public static void main(String[] args) {
+        
+    Pareja<String, Integer> p1 = new Pareja<>("Juan", 20);
+    
+    System.out.println(p1.toString());
+    Pareja.printTwoTypes(7, "Puedo permitirme incluso cambiar los tipos, al ser estático");
 }
 ```
+
+[DEMO del ejemplo anterior funcionando](datos_genericos/Main.java)
 
 ## Convenciones de nombres
 
