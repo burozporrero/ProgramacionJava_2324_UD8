@@ -84,8 +84,9 @@ detalle. Para quien quiera ir un poco más allá os animo a ver el siguiente vid
 
 ```java
 List<String> personas = new ArrayList<>(); 
-for (Iterator<String> it = personas.iterator() ; personas.hasNext() ; ) {
+for (Iterator<String> it = personas.iterator() ; it.hasNext() ; ) {
         // Ejecuto acción
+        it.next();
  }
 ```
 
