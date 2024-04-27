@@ -59,3 +59,37 @@ Implementación de la interfaz Set que utiliza un árbol rojo-negro para almacen
 - Proporciona un rendimiento eficiente con grandes cantidades de datos.
 - Necesita que implementemos la interfaz Comparable en la clase que se va a guardar en el TreeSet o proporcionar un
   Comparator.
+
+`TreeMap` en Java implementa la interfaz `NavigableMap`, que extiende `SortedMap` , lo cual proporciona varios
+métodos adicionales que no están disponibles para las clases de arriba y son los siguientes:
+
+- `lowerKey(K key)`: Devuelve la clave más grande en este mapa que es menor que `key`, o `null` si no hay tal clave.
+- `lowerEntry(K key)`: Devuelve un par clave-valor asociado con la clave más grande en este mapa que es menor que `key`, o `null` si no hay tal clave.
+- `floorKey(K key)`: Devuelve la clave más grande en este mapa menor o igual a `key`, o `null` si no hay tal clave.
+- `floorEntry(K key)`: Devuelve un par clave-valor asociado con la clave más grande en este mapa menor o igual a `key`, o `null` si no hay tal clave.
+- `ceilingKey(K key)`: Devuelve la clave más pequeña en este mapa mayor o igual a `key`, o `null` si no hay tal clave.
+- `ceilingEntry(K key)`: Devuelve un par clave-valor asociado con la clave más pequeña en este mapa mayor o igual a `key`, o `null` si no hay tal clave.
+- `higherKey(K key)`: Devuelve la clave más pequeña en este mapa mayor que `key`, o `null` si no hay tal clave.
+- `higherEntry(K key)`: Devuelve un par clave-valor asociado con la clave más pequeña en este mapa mayor que `key`, o `null` si no hay tal clave.
+- `firstEntry()`: Devuelve un par clave-valor asociado con la clave más pequeña en este mapa, o `null` si el mapa está vacío.
+- `lastEntry()`: Devuelve un par clave-valor asociado con la clave más grande en este mapa, o `null` si el mapa está vacío.
+- `pollFirstEntry()`: Elimina y devuelve un par clave-valor asociado con la clave más pequeña en este mapa, o `null` si el mapa está vacío.
+- `pollLastEntry()`: Elimina y devuelve un par clave-valor asociado con la clave más grande en este mapa, o `null` si el mapa está vacío.
+- `descendingMap()`: Devuelve un mapa en orden descendente.
+- `descendingKeySet()`: Devuelve un conjunto de claves en orden descendente.
+- `navigableKeySet()`: Devuelve un conjunto de claves en orden ascendente.
+- `subMap(K fromKey, boolean fromInclusive, K toKey, boolean toInclusive)`: Devuelve una vista del mapa cuyas claves van desde `fromKey` a `toKey`.
+- `headMap(K toKey, boolean inclusive)`: Devuelve una vista del mapa cuyas claves son menores que (o iguales a, si `inclusive` es verdadero) `toKey`.
+- `tailMap(K fromKey, boolean inclusive)`: Devuelve una vista del mapa cuyas claves son mayores que (o iguales a, si `inclusive` es verdadero) `fromKey`.
+
+
+Para el uso de estos métodos, que implican una manipulación más precisa y flexible, será necesario que la variable
+declarada sea de tipo TreeMap, ya que, la interfaz `Map` estándar no nos permitirá acceder a ellos.
+
+```java
+ import java.util.TreeMap;// Mejor declarar la variable como TreeMap
+TreeMap<Integer, Estudiante> treeEstudiantes = new TreeSet<>();
+
+// que como Map
+Map<Integer, Estudiante> treeEstudiantes = new TreeMap<>();
+``` 

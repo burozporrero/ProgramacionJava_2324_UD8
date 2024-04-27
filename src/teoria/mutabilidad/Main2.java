@@ -20,10 +20,9 @@ public class Main2 {
         System.out.println("Conjunt modificable: \n" + conjuntDemo1); // visualitza [Vigo>>11, València
 
         // Como hacer una colección inmutable
-
         Set<MeuClas> conjuntInmutableDemo1 = Set.of(new MeuClas(1, "Murcia"), new MeuClas(3, "Granada"), new MeuClas(11, "Vigo"));
         System.out.println("\nConjunt inmutable Set.of: \n" + conjuntInmutableDemo1);
-        //conjuntInmutableDemo1.add(new MeuClas(1, "Segovia"));
+        //conjuntInmutableDemo1.add(new MeuClas(2, "Segovia"));
 
         Set<MeuClas> conjuntUnmodSetDemo1 = Collections.unmodifiableSet(conjuntDemo1);
         System.out.println("\nConjunt inmutable unmodifiableSet: \n" + conjuntUnmodSetDemo1);

@@ -32,6 +32,9 @@ vecList.add(1.2f);
 stackList.add("Paul");
 ```
 
+Recordar aquí las excepciones de TreeSet y TreeMap, que necesitan que la variable del tipo concreto paara tener 
+acceso a más métodos.
+
 ## Colecciones hash, hashCode y mutabilidad
 
 En este punto os dejo el material del profesor Eduard Silvestre, que detalla perfectamente la problemática a la que nos 
