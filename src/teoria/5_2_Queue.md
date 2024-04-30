@@ -2,7 +2,7 @@
 
 ## ¿Qué es una cola?
 
-[Ir a Oracle: Conjunto](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Set.html)
+[Ir a Oracle: Queue](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Queue.html)
 
 Una cola (Queue) es una colección que representa una estructura FIFO (First-In, First-Out), donde el 
 primer elemento que se añade es el primero en ser eliminado. 
@@ -56,6 +56,8 @@ public class Main {
 ```
 
 ## Interfaz DEQUE
+
+[Ir a Oracle: Deque](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Deque.html)
 
 La interfaz `Deque` (Double Ended Queue) en Java representa una cola doble, lo que quiere decir que, puede utilizar 
 como cola (primero en entrar, primero en salir/**FIFO**) o como pila (último en entrar, primero en salir/**LIFO**), 
