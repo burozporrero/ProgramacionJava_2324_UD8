@@ -15,25 +15,29 @@ curiosidad
 
 ## Declaración de interfaces
 
-Declarar las colecciones a través de una interfaz, de esta manera, el tipo de datos de los elementos de dichas 
-listas se determina durante la inicialización de la lista, es decir, cuando se agregan elementos allí.
+Es recomendable declarar las colecciones a través de una interfaz por las siguientes razones:
+
+1. **Flexibilidad**: Al declarar una colección como su tipo de interfaz (por ejemplo, `List`, `Set`, `Map`), puedes cambiar fácilmente la implementación real de la colección (por ejemplo, de `ArrayList` a `LinkedList`) sin tener que cambiar el tipo de la variable. Esto puede ser útil si necesitas cambiar la implementación para optimizar el rendimiento o para utilizar características específicas de una implementación.
+
+2. **Principio de programación para interfaces**: Este es un principio de diseño de software que sugiere que las variables deben ser declaradas como el tipo de interfaz en lugar del tipo de clase cuando sea posible. Esto permite que el código sea más flexible y adaptable a cambios.
+
+3. **Encapsulamiento**: Al usar el tipo de interfaz, estás ocultando los detalles de la implementación de la colección. Esto es una forma de encapsulamiento, que es un principio fundamental de la programación orientada a objetos.
+
+4. **Polimorfismo**: Las interfaces permiten el polimorfismo, que es la capacidad de una variable de referirse a objetos de diferentes clases. Esto puede ser útil en muchos contextos, como cuando se pasan colecciones a métodos o se devuelven de ellos.
+
+Por lo tanto, aunque hay situaciones en las que puede ser necesario o útil utilizar el tipo de clase específico 
+(TreeSet y TreeMap, cuando se necesitan métodos específicos de una implementación), en general es una buena 
+práctica en Java declarar las colecciones a través de una interfaz.
 
 ```java
 List arrayList = new ArrayList();
 List vecList = new Vector();
 List stackList = new Stack();
 
-// Cuidado con la siguiente, probemos que ocurre con cada una
-LinkedList linkedList = new LinkedList();
-List linkedList = new LinkedList();
-
 arrayList.add(1);
 vecList.add(1.2f);
 stackList.add("Paul");
 ```
-
-Recordar aquí las excepciones de TreeSet y TreeMap, que necesitan que la variable del tipo concreto paara tener 
-acceso a más métodos.
 
 ## Colecciones hash, hashCode y mutabilidad
 
